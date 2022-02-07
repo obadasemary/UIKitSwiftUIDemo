@@ -61,7 +61,6 @@
 		AF76C43427AF66370031061F /* lion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AF76C42027AF66370031061F /* lion.mp4 */; };
 		AF76C43527AF66370031061F /* rhino.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AF76C42127AF66370031061F /* rhino.mp4 */; };
 		AF76C43727AF6D490031061F /* UIKitSwiftUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76C43627AF6D490031061F /* UIKitSwiftUIExtension.swift */; };
-		AF76C43A27AF78300031061F /* SwiftUIKitView in Frameworks */ = {isa = PBXBuildFile; productRef = AF76C43927AF78300031061F /* SwiftUIKitView */; };
 		AF76C43C27B083BC0031061F /* QueryTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76C43B27B083BC0031061F /* QueryTag.swift */; };
 		AF76C43E27B083F60031061F /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76C43D27B083F60031061F /* TabsView.swift */; };
 		AF76C44127B09FEC0031061F /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76C44027B09FEC0031061F /* VideoCard.swift */; };
@@ -138,7 +137,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF76C43A27AF78300031061F /* SwiftUIKitView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +307,6 @@
 			);
 			name = UIKitSwiftUIDemo;
 			packageProductDependencies = (
-				AF76C43927AF78300031061F /* SwiftUIKitView */,
 			);
 			productName = UIKitSwiftUIDemo;
 			productReference = AF76C3B927AF63070031061F /* UIKitSwiftUIDemo.app */;
@@ -340,7 +337,6 @@
 			);
 			mainGroup = AF76C3B027AF63070031061F;
 			packageReferences = (
-				AF76C43827AF78300031061F /* XCRemoteSwiftPackageReference "SwiftUIKitView" */,
 			);
 			productRefGroup = AF76C3BA27AF63070031061F /* Products */;
 			projectDirPath = "";
@@ -644,25 +640,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		AF76C43827AF78300031061F /* XCRemoteSwiftPackageReference "SwiftUIKitView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AvdLee/SwiftUIKitView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AF76C43927AF78300031061F /* SwiftUIKitView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AF76C43827AF78300031061F /* XCRemoteSwiftPackageReference "SwiftUIKitView" */;
-			productName = SwiftUIKitView;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF76C3B127AF63070031061F /* Project object */;
 }
