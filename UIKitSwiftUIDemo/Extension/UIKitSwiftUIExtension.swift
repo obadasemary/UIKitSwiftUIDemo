@@ -15,7 +15,7 @@ extension UIViewController {
     ///   - swiftUIView: The SwiftUI `View` to add as a child.
     ///   - view: The `UIView` instance to which the view should be added.
 
-    func addSubSwiftUIView<Content>(_ swiftUIView: Content, to view: UIView) where Content : View {
+    func addSubSwiftUIView<Content>(_ swiftUIView: Content, to view: UIView, constant: CGFloat = 0) where Content : View {
 
         let hostingController = UIHostingController(rootView: swiftUIView)
 
@@ -29,9 +29,9 @@ extension UIViewController {
         hostingController.view.translatesAutoresizingMaskIntoConstraints = false
         let constraints = [
             hostingController.view.topAnchor.constraint(equalTo: view.topAnchor),
-            hostingController.view.leftAnchor.constraint(equalTo: view.leftAnchor),
+            hostingController.view.leftAnchor.constraint(equalTo: view.leftAnchor, constant: constant),
             view.bottomAnchor.constraint(equalTo: hostingController.view.bottomAnchor),
-            view.rightAnchor.constraint(equalTo: hostingController.view.rightAnchor)
+            view.rightAnchor.constraint(equalTo: hostingController.view.rightAnchor, constant: constant)
         ]
 
         NSLayoutConstraint.activate(constraints)

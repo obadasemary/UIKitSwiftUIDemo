@@ -61,6 +61,12 @@
 		AF76C43427AF66370031061F /* lion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AF76C42027AF66370031061F /* lion.mp4 */; };
 		AF76C43527AF66370031061F /* rhino.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AF76C42127AF66370031061F /* rhino.mp4 */; };
 		AF76C43727AF6D490031061F /* UIKitSwiftUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76C43627AF6D490031061F /* UIKitSwiftUIExtension.swift */; };
+		AF76C43A27AF78300031061F /* SwiftUIKitView in Frameworks */ = {isa = PBXBuildFile; productRef = AF76C43927AF78300031061F /* SwiftUIKitView */; };
+		AF76C43C27B083BC0031061F /* QueryTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76C43B27B083BC0031061F /* QueryTag.swift */; };
+		AF76C43E27B083F60031061F /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76C43D27B083F60031061F /* TabsView.swift */; };
+		AF76C44127B09FEC0031061F /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76C44027B09FEC0031061F /* VideoCard.swift */; };
+		AF76C44327B0ABC30031061F /* FeedGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76C44227B0ABC30031061F /* FeedGalleryView.swift */; };
+		AF76C44527B119330031061F /* AnimalGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76C44427B119330031061F /* AnimalGalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +126,11 @@
 		AF76C42027AF66370031061F /* lion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lion.mp4; sourceTree = "<group>"; };
 		AF76C42127AF66370031061F /* rhino.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rhino.mp4; sourceTree = "<group>"; };
 		AF76C43627AF6D490031061F /* UIKitSwiftUIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitSwiftUIExtension.swift; sourceTree = "<group>"; };
+		AF76C43B27B083BC0031061F /* QueryTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryTag.swift; sourceTree = "<group>"; };
+		AF76C43D27B083F60031061F /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		AF76C44027B09FEC0031061F /* VideoCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCard.swift; sourceTree = "<group>"; };
+		AF76C44227B0ABC30031061F /* FeedGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedGalleryView.swift; sourceTree = "<group>"; };
+		AF76C44427B119330031061F /* AnimalGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF76C43A27AF78300031061F /* SwiftUIKitView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +213,13 @@
 				AF76C3E327AF64510031061F /* VideoListItemView.swift */,
 				AF76C3E427AF64510031061F /* InsetFactView.swift */,
 				AF76C3E527AF64510031061F /* InsetGalleryView.swift */,
+				AF76C44427B119330031061F /* AnimalGalleryView.swift */,
+				AF76C44227B0ABC30031061F /* FeedGalleryView.swift */,
 				AF76C3E627AF64510031061F /* AnimalDetailView.swift */,
 				AF76C3E727AF64510031061F /* MapAnnotationView.swift */,
+				AF76C43B27B083BC0031061F /* QueryTag.swift */,
+				AF76C43D27B083F60031061F /* TabsView.swift */,
+				AF76C44027B09FEC0031061F /* VideoCard.swift */,
 				AF76C40427AF661D0031061F /* Model */,
 				AF76C40327AF661D0031061F /* ViewModel */,
 			);
@@ -291,6 +308,9 @@
 			dependencies = (
 			);
 			name = UIKitSwiftUIDemo;
+			packageProductDependencies = (
+				AF76C43927AF78300031061F /* SwiftUIKitView */,
+			);
 			productName = UIKitSwiftUIDemo;
 			productReference = AF76C3B927AF63070031061F /* UIKitSwiftUIDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -319,6 +339,9 @@
 				Base,
 			);
 			mainGroup = AF76C3B027AF63070031061F;
+			packageReferences = (
+				AF76C43827AF78300031061F /* XCRemoteSwiftPackageReference "SwiftUIKitView" */,
+			);
 			productRefGroup = AF76C3BA27AF63070031061F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -371,7 +394,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF76C3F227AF64510031061F /* MapAnnotationView.swift in Sources */,
+				AF76C44127B09FEC0031061F /* VideoCard.swift in Sources */,
 				AF76C3D227AF63950031061F /* CodableBundleExtension.swift in Sources */,
+				AF76C43E27B083F60031061F /* TabsView.swift in Sources */,
 				AF76C40127AF65840031061F /* ContentView.swift in Sources */,
 				AF76C3F127AF64510031061F /* AnimalDetailView.swift in Sources */,
 				AF76C3FE27AF65840031061F /* AfricaApp.swift in Sources */,
@@ -381,7 +406,9 @@
 				AF76C3C127AF63070031061F /* ViewController.swift in Sources */,
 				AF76C3F527AF64610031061F /* VideoPlayerHelper.swift in Sources */,
 				AF76C3BD27AF63070031061F /* AppDelegate.swift in Sources */,
+				AF76C43C27B083BC0031061F /* QueryTag.swift in Sources */,
 				AF76C40C27AF661D0031061F /* LocationModel.swift in Sources */,
+				AF76C44527B119330031061F /* AnimalGalleryView.swift in Sources */,
 				AF76C40B27AF661D0031061F /* CoverImageModel.swift in Sources */,
 				AF76C3EB27AF64510031061F /* CoverImageView.swift in Sources */,
 				AF76C3FD27AF65840031061F /* MapView.swift in Sources */,
@@ -395,6 +422,7 @@
 				AF76C40A27AF661D0031061F /* VideoModel.swift in Sources */,
 				AF76C3E927AF64510031061F /* VideoPlayerView.swift in Sources */,
 				AF76C3FF27AF65840031061F /* GalleryView.swift in Sources */,
+				AF76C44327B0ABC30031061F /* FeedGalleryView.swift in Sources */,
 				AF76C3EA27AF64510031061F /* ExternalWeblinkView.swift in Sources */,
 				AF76C3F027AF64510031061F /* InsetGalleryView.swift in Sources */,
 			);
@@ -616,6 +644,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF76C43827AF78300031061F /* XCRemoteSwiftPackageReference "SwiftUIKitView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AvdLee/SwiftUIKitView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF76C43927AF78300031061F /* SwiftUIKitView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF76C43827AF78300031061F /* XCRemoteSwiftPackageReference "SwiftUIKitView" */;
+			productName = SwiftUIKitView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF76C3B127AF63070031061F /* Project object */;
 }
