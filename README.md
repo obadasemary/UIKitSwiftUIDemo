@@ -91,6 +91,6 @@ Adding SwiftUI views in a UIKit application early on makes your future self a lo
 | :---: | :---: | :---: |
 |<img src="https://github.com/obadasemary/UIKitSwiftUIDemo/blob/main/Screenshots/UIKitSwiftUIDemo03.png" alt="HTML5 Icon" width="300" height="598">|<img src="https://github.com/obadasemary/UIKitSwiftUIDemo/blob/main/Screenshots/UIKitSwiftUIDemo04.png" alt="HTML5 Icon" width="300" height="598">|<img src="https://github.com/obadasemary/UIKitSwiftUIDemo/blob/main/Screenshots/UIKitSwiftUIDemo05.png" alt="HTML5 Icon" width="300" height="598">|
 
-If you like to read the original source of this article, check out the [Getting started with UIKit in SwiftUI](https://www.avanderlee.com/swiftui/integrating-swiftui-with-uikit/) by [Antoine v.d.](https://twitter.com/twannl) [SwiftLee ](https://www.avanderlee.com). Feel free to contact me or tweet to me on [Twitter](https://twitter.com/obadasemary) if you have any additional tips or feedback.
+If you like to read the original source of this article, check out the [Getting started with UIKit in SwiftUI](https://www.avanderlee.com/swiftui/integrating-swiftui-with-uikit/) by [Antoine v.d.](https://twitter.com/twannl) [SwiftLee ](https://www.avanderlee.com). Feel free to contact me or tweet to me on [Twitter](https://twitter.com/obadasemary) <a href="https://twitter.com/obadasemary" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="obadasemary" height="30" width="30" /></a> if you have any additional tips or feedback.
 
 Thanks!
