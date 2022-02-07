@@ -30,47 +30,39 @@ class ViewController: UIViewController {
         ]
     )
 
+    @IBOutlet var tabsView: UIView!
     @IBOutlet var coverView: UIView!
     @IBOutlet var galleryView: UIView!
+    @IBOutlet var feedGalleryView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "UIKitSwiftUI"
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.navigationBar.prefersLargeTitles = true
+
+        setupViews()
+
+        addTabsView()
         addCoverView()
         addGalleryView()
+        addFeedGalleryView()
     }
 
-    //    func presentSwiftUIView() {
-    //        let swiftUIView = InsetGalleryView(animal: animal)
-    //        let hostingController = UIHostingController(rootView: swiftUIView)
-    //        present(hostingController, animated: true, completion: nil)
-    //    }
+    func setupViews() {
 
-    //    func addSwiftUIView() {
-    //
-    //        let swiftUIView = InsetGalleryView(animal: animal)
-    //        let hostingController = UIHostingController(rootView: swiftUIView)
-    //
-    //        // Add as a child of the current view controller.
-    //        addChild(hostingController)
-    //
-    //        // Add the SwiftUI view to the view controller view hierarchy.
-    //        view.addSubview(hostingController.view)
-    //
-    //        // Setup the constraints to update the SwiftUI view boundaries.
-    //        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
-    //        let constraints = [
-    //            hostingController.view.topAnchor.constraint(equalTo: view.topAnchor),
-    //            hostingController.view.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
-    //            view.bottomAnchor.constraint(equalTo: hostingController.view.bottomAnchor),
-    //            view.rightAnchor.constraint(equalTo: hostingController.view.rightAnchor, constant: 10)
-    //        ]
-    //
-    //        NSLayoutConstraint.activate(constraints)
-    //
-    //        // Notify the hosting controller that it has been moved to the current view controller.
-    //        hostingController.didMove(toParent: self)
-    //    }
+        tabsView.isHidden = false
+        coverView.isHidden = true
+        galleryView.isHidden = false
+        feedGalleryView.isHidden = false
+    }
+
+    func addTabsView() {
+
+        let swiftUIView = TabsView()
+        addSubSwiftUIView(swiftUIView, to: tabsView, constant: 20)
+    }
 
     func addCoverView() {
 
@@ -81,7 +73,13 @@ class ViewController: UIViewController {
     func addGalleryView() {
 
         let swiftUIView = InsetGalleryView(animal: animal)
-        addSubSwiftUIView(swiftUIView, to: galleryView)
+        addSubSwiftUIView(swiftUIView, to: galleryView, constant: 20)
+    }
+
+    func addFeedGalleryView() {
+
+        let swiftUIView = FeedGalleryView(animal: animal)
+        addSubSwiftUIView(swiftUIView, to: feedGalleryView)
     }
 }
 
